@@ -1,11 +1,18 @@
 # zybo-lane-detection
 Implementacja asystenta pasa ruchu
 
+# TODO:
+- wybra? jak wykrywa? pasy na podstawie Canny
+
 # Uruchomienie toru wizyjnego na Zybo
 1. Pobra? "HDMI-VGA Zybo" z UPEL
 2. Synteza projektu w Vivado
 3. Podpi?cie kamery przez HDMI, monitora przez VGA, jest tylko 1 z??cze HDMI
 [Nie dzia?a przez splitter, tylko bezpo?rednio z kamery]
+
+# Canny - import
+1. Otworzy? projekt hdmi... z google drive
+2. Blok Canny wyeksportowa? jako IP
 
 # Zadania
 

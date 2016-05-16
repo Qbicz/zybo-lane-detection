@@ -17,6 +17,18 @@ public:
         return *this;
     }
 
+    fp & operator<<=(int b) {
+        f += b;
+        d <<= b;
+        return *this;
+    }
+
+    fp & operator>>=(int b) {
+        f -= b;
+        d >>= b;
+        return *this;
+    }
+
     operator double() {
         double v = d;
         return v / (1 << f);

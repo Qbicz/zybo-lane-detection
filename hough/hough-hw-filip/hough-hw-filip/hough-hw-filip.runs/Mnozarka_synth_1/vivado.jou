@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed May 11 11:32:33 2016
+# Process ID: 2013
+# Current directory: /home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.runs/Mnozarka_synth_1
+# Command line: vivado -log Mnozarka.vds -mode batch -messageDb vivado.pb -notrace -source Mnozarka.tcl
+# Log file: /home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.runs/Mnozarka_synth_1/Mnozarka.vds
+# Journal file: /home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.runs/Mnozarka_synth_1/vivado.jou
+#-----------------------------------------------------------
+source Mnozarka.tcl -notrace

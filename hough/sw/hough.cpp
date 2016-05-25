@@ -9,9 +9,9 @@
 #include "fp.h"
 
 cv::Mat hough(const cv::Mat & src,
-              double dphi,
-              double drho) {
-    std::vector<double> cosphis;
+              double dphi,   // phi increment
+              double drho) { // rho increment
+    std::vector<double> cosphis; // TODO: vector of type fp
     std::vector<double> sinphis;
     cosphis.resize(180/dphi);
     sinphis.resize(cosphis.size());
@@ -43,7 +43,7 @@ cv::Mat hough(const cv::Mat & src,
             if(pix) {
                 for(int i = 0; i < phic; ++i) {
                     double rho = cosphis[i]*x + sinphis[i]*y;
-                    int j = (int)((rho + r)/drho);
+                    int j = (int)((rho + r)/drho); // rho is in (-r, r)
                     hough_plane[i][j] += 1;
                 }
             }

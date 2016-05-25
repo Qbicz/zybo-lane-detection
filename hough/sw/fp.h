@@ -5,7 +5,7 @@
 
 class fp {
     int32_t     d;
-    uint32_t    f;
+    uint32_t    f; // precision
 
 public:
 
@@ -17,7 +17,7 @@ public:
         return *this;
     }
 
-    fp & operator<<=(int b) {
+    fp & operator<<=(int b) { // increase prec
         f += b;
         d <<= b;
         return *this;
@@ -29,7 +29,7 @@ public:
         return *this;
     }
 
-    operator double() {
+    operator double() { // fp -> double
         double v = d;
         return v / (1 << f);
     }

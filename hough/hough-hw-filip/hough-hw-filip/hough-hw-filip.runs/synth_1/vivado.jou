@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:22:08 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Wed May 25 07:50:38 2016
+# Process ID: 7988
+# Log file: E:/Teczka/8 semestr/PSRA/zybo-lane-detection/hough/hough-hw-filip/hough-hw-filip/hough-hw-filip.runs/synth_1/base_zynq_design_wrapper.vds
+# Journal file: E:/Teczka/8 semestr/PSRA/zybo-lane-detection/hough/hough-hw-filip/hough-hw-filip/hough-hw-filip.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_zynq_design_wrapper.tcl -notrace

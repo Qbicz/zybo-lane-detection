@@ -1,0 +1,616 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed May 11 11:32:33 2016
+# Process ID: 2013
+# Current directory: /home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.runs/Mnozarka_synth_1
+# Command line: vivado -log Mnozarka.vds -mode batch -messageDb vivado.pb -notrace -source Mnozarka.tcl
+# Log file: /home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.runs/Mnozarka_synth_1/Mnozarka.vds
+# Journal file: /home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.runs/Mnozarka_synth_1/vivado.jou
+#-----------------------------------------------------------
+source Mnozarka.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/Vivado/2015.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'Mnozarka' generated file not found '/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/Mnozarka.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'Mnozarka' generated file not found '/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/Mnozarka_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'Mnozarka' generated file not found '/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/Mnozarka_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'Mnozarka' generated file not found '/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/Mnozarka_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'Mnozarka' generated file not found '/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/Mnozarka_sim_netlist.vhdl'. Please regenerate to continue.
+Command: synth_design -top Mnozarka -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -132 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1040.266 ; gain = 201.543 ; free physical = 12506 ; free virtual = 21849
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Mnozarka' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/synth/Mnozarka.vhd:69]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/synth/Mnozarka.vhd:73]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/synth/Mnozarka.vhd:73]
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_10' declared at '/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd:116' bound to instance 'U0' of component 'mult_gen_v12_0_10' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/synth/Mnozarka.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_v12_0_10' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd:155]
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_10_viv' declared at '/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:20732' bound to instance 'i_mult' of component 'mult_gen_v12_0_10_viv' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_v12_0_10_viv' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:20781]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:862]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:863]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:870]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:884]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:891]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:901]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:910]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:932]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:945]
+INFO: [Synth 8-638] synthesizing module 'multmxn_lut6' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:20105]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:20126]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: report statement [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:20257]
+INFO: [Synth 8-638] synthesizing module 'three_input_adder' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:18981]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19092]
+INFO: [Synth 8-113] binding component instance 'lut0o6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19201]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19395]
+INFO: [Synth 8-113] binding component instance 'lutpreMSBo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19585]
+INFO: [Synth 8-113] binding component instance 'mcy03' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19791]
+INFO: [Synth 8-113] binding component instance 'xcy03' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19797]
+INFO: [Synth 8-113] binding component instance 'mcy02' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19803]
+INFO: [Synth 8-113] binding component instance 'xcy02' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19809]
+INFO: [Synth 8-113] binding component instance 'mcy01' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19815]
+INFO: [Synth 8-113] binding component instance 'xcy01' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19821]
+INFO: [Synth 8-113] binding component instance 'mcy00' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19827]
+INFO: [Synth 8-113] binding component instance 'xcy00' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19833]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'mcy03' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19852]
+INFO: [Synth 8-113] binding component instance 'xcy03' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19858]
+INFO: [Synth 8-113] binding component instance 'mcy02' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19864]
+INFO: [Synth 8-113] binding component instance 'xcy02' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19870]
+INFO: [Synth 8-113] binding component instance 'mcy01' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19876]
+INFO: [Synth 8-113] binding component instance 'xcy01' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19882]
+INFO: [Synth 8-113] binding component instance 'mcy00' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19888]
+INFO: [Synth 8-113] binding component instance 'xcy00' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19894]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'mcy03' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19852]
+INFO: [Synth 8-113] binding component instance 'xcy03' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19858]
+INFO: [Synth 8-113] binding component instance 'mcy02' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19864]
+INFO: [Synth 8-113] binding component instance 'xcy02' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19870]
+INFO: [Synth 8-113] binding component instance 'mcy01' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19876]
+INFO: [Synth 8-113] binding component instance 'xcy01' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19882]
+INFO: [Synth 8-113] binding component instance 'mcy00' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19888]
+INFO: [Synth 8-113] binding component instance 'xcy00' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19894]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'mcy03' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19852]
+INFO: [Synth 8-113] binding component instance 'xcy03' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19858]
+INFO: [Synth 8-113] binding component instance 'mcy02' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19864]
+INFO: [Synth 8-113] binding component instance 'xcy02' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19870]
+INFO: [Synth 8-113] binding component instance 'mcy01' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19876]
+INFO: [Synth 8-113] binding component instance 'xcy01' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19882]
+INFO: [Synth 8-113] binding component instance 'mcy00' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19888]
+INFO: [Synth 8-113] binding component instance 'xcy00' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19894]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'mcy03' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19852]
+INFO: [Synth 8-113] binding component instance 'xcy03' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19858]
+INFO: [Synth 8-113] binding component instance 'mcy02' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19864]
+INFO: [Synth 8-113] binding component instance 'xcy02' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19870]
+INFO: [Synth 8-113] binding component instance 'mcy01' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19876]
+INFO: [Synth 8-113] binding component instance 'xcy01' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19882]
+INFO: [Synth 8-113] binding component instance 'mcy00' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19888]
+INFO: [Synth 8-113] binding component instance 'xcy00' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19894]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'mcy03' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19852]
+INFO: [Synth 8-113] binding component instance 'xcy03' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19858]
+INFO: [Synth 8-113] binding component instance 'mcy02' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19864]
+INFO: [Synth 8-113] binding component instance 'xcy02' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19870]
+INFO: [Synth 8-113] binding component instance 'mcy01' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19876]
+INFO: [Synth 8-113] binding component instance 'xcy01' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19882]
+INFO: [Synth 8-113] binding component instance 'mcy00' to cell 'MUXCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19888]
+INFO: [Synth 8-113] binding component instance 'xcy00' to cell 'XORCY' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19894]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-113] binding component instance 'ff_fdre' to cell 'FDRE' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19983]
+INFO: [Synth 8-256] done synthesizing module 'three_input_adder' (1#1) [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:18981]
+INFO: [Synth 8-638] synthesizing module 'three_input_adder__parameterized0' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:18981]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19092]
+INFO: [Synth 8-113] binding component instance 'lut0o6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19160]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19354]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19354]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19354]
+INFO: [Synth 8-113] binding component instance 'lutXo6' to cell 'LUT6_2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19354]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'three_input_adder__parameterized0' (1#1) [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:18981]
+INFO: [Synth 8-638] synthesizing module 'three_input_adder__parameterized1' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:18981]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19092]
+INFO: [Synth 8-256] done synthesizing module 'three_input_adder__parameterized1' (1#1) [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:18981]
+INFO: [Synth 8-638] synthesizing module 'three_input_adder__parameterized2' [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:18981]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:19092]
+INFO: [Synth 8-256] done synthesizing module 'three_input_adder__parameterized2' (1#1) [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:18981]
+INFO: [Synth 8-256] done synthesizing module 'multmxn_lut6' (2#1) [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:20105]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_v12_0_10_viv' (3#1) [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0_vh_rfs.vhd:20781]
+INFO: [Synth 8-256] done synthesizing module 'mult_gen_v12_0_10' (4#1) [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/mult_gen_v12_0_10/hdl/mult_gen_v12_0.vhd:155]
+INFO: [Synth 8-256] done synthesizing module 'Mnozarka' (5#1) [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/synth/Mnozarka.vhd:69]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1087.129 ; gain = 248.406 ; free physical = 12455 ; free virtual = 21800
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1087.129 ; gain = 248.406 ; free physical = 12455 ; free virtual = 21800
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 284 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/Mnozarka_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/Mnozarka_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.runs/Mnozarka_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.runs/Mnozarka_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 92 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT6, LUT5): 92 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1405.496 ; gain = 0.000 ; free physical = 12278 ; free virtual = 21645
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2039 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12273 ; free virtual = 21641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12274 ; free virtual = 21641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12274 ; free virtual = 21641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12258 ; free virtual = 21625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12258 ; free virtual = 21625
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12244 ; free virtual = 21611
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12244 ; free virtual = 21611
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[0] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][22] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][23] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][22] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][23] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][22] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][23] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][22] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][23] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][23] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][22] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][23] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][22] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][0] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][1] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][0] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][1] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[1] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][1] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][1] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][2] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][1] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][2] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[2] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][2] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][2] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][3] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][2] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][3] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[3] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][3] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][3] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][4] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][3] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][4] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[4] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][4] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][4] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][5] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][4] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][5] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[5] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][5] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][5] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][6] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][5] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][6] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[6] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][6] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][6] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][7] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][6] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][7] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[7] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][7] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][7] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][8] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][7] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][8] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[8] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][8] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][8] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][21] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][8] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][21] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[9] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][21] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[10] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][21] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[11] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][21] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][21] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][21] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][0] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][1] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][0] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][1] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][0] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][1] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][1] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][2] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][1] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][2] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][1] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][2] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][2] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][3] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][2] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][3] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][2] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][3] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][3] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][4] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][3] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][4] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][4] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][5] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][4] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][5] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][5] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][18] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][5] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][18] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][15] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][18] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][16] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][18] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][17] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][18] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][18] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][19] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][18] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][19] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][18] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][19] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][19] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][20] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][19] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][20] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][19] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][20] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][20] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][21] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][20] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][21] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][20] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][21] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][21] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][21] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][21] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][21] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][21] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][0] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][0] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][1] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][1] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][2] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][2] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][15] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][15] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][16] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][16] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][17] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][17] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][18] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][18] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][19] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][19] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][20] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][20] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][21] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][21] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[0][20] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[0][14] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[0][20] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[0][17] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[0][20] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_mult/\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[0][20] )
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[0][0] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[1][14] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[0][1] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[1][14] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[0][2] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[1][14] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[0][15] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[1][14] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[0][16] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[1][14] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[0][17] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[1][14] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[0][18] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[1][14] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[0][19] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[1][14] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[0][20] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[1][14] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[0][21] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[1][14] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[1][14] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[1][17] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[1][17] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[1].incomplete_three_input.register_bypass.bypass_reg[1][20] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[2].incomplete_three_input.register_bypass.bypass_reg[0][14] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[2].incomplete_three_input.register_bypass.bypass_reg[0][20] '
+INFO: [Synth 8-3886] merging instance 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[2].incomplete_three_input.register_bypass.bypass_reg[0][17] ' (FDRE) to 'U0/i_mult/\gLUT.gLUT_area.iLUT6/adders_gen[2].incomplete_three_input.register_bypass.bypass_reg[0][20] '
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/adders_gen[1].one_layer_adders_gen[0].s/gen_carry4s[5].use_ffs.gen_fdre[2].ff_fdre ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/adders_gen[1].one_layer_adders_gen[0].s/gen_carry4s[5].use_ffs.gen_fdre[3].ff_fdre ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/adders_gen[1].one_layer_adders_gen[1].s/gen_carry4s[5].use_ffs.gen_fdre[2].ff_fdre ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/adders_gen[1].one_layer_adders_gen[1].s/gen_carry4s[5].use_ffs.gen_fdre[3].ff_fdre ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/adders_gen[2].one_layer_adders_gen[0].s/gen_carry4s[5].use_ffs.gen_fdre[2].ff_fdre ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/adders_gen[2].one_layer_adders_gen[0].s/gen_carry4s[5].use_ffs.gen_fdre[3].ff_fdre ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/adders_gen[3].one_layer_adders_gen[0].s/gen_carry4s[5].use_ffs.gen_fdre[2].ff_fdre ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/adders_gen[3].one_layer_adders_gen[0].s/gen_carry4s[5].use_ffs.gen_fdre[3].ff_fdre ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[0][23] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[0][22] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/adders_gen[2].incomplete_three_input.register_bypass.bypass_reg[0][20] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/adders_gen[2].incomplete_three_input.register_bypass.bypass_reg[0][17] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/adders_gen[2].incomplete_three_input.register_bypass.bypass_reg[0][14] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[23] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[22] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][0] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[0] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][22] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][23] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][22] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][23] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][22] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][23] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][22] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][23] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][23] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][22] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][23] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][22] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][1] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][0] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[1] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][2] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][1] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[2] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][3] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][2] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[3] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][4] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][3] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[4] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][5] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][4] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[5] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][6] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][5] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[6] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][7] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][6] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[7] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][8] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][7] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[8] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[6][21] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][8] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[9] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[10] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.sign_correct_q_reg[11] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][0] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[5][21] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][1] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][0] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][0] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][2] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][1] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][1] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][3] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][2] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][2] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][4] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][3] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][5] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][4] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][18] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][5] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][15] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][16] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][17] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][19] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][18] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][18] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][20] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][19] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][19] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[4][21] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][20] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][20] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[2][21] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[3][21] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][0] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][1] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][2] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][15] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][16] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][17] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][18] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][19] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][20] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[1][21] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Synth 8-3332] Sequential element (\gLUT.gLUT_area.iLUT6/pipe_reg1.shift_part_q_reg[0][20] ) is unused and will be removed from module mult_gen_v12_0_10_viv.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12243 ; free virtual = 21611
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12243 ; free virtual = 21611
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12196 ; free virtual = 21573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12196 ; free virtual = 21573
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12178 ; free virtual = 21555
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12178 ; free virtual = 21555
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12178 ; free virtual = 21555
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12178 ; free virtual = 21555
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12178 ; free virtual = 21555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12178 ; free virtual = 21555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12178 ; free virtual = 21555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12178 ; free virtual = 21554
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12178 ; free virtual = 21554
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT2   |    17|
+|2     |LUT4   |    19|
+|3     |LUT5   |     8|
+|4     |LUT6   |    48|
+|5     |LUT6_2 |    88|
+|6     |MUXCY  |    84|
+|7     |SRL16E |    19|
+|8     |XORCY  |    88|
+|9     |FDRE   |   201|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12178 ; free virtual = 21554
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1405.496 ; gain = 117.348 ; free physical = 12178 ; free virtual = 21554
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1405.496 ; gain = 566.773 ; free physical = 12178 ; free virtual = 21554
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 260 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/Mnozarka_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/lsriw/psra/kubicz/Hough_Filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/Mnozarka_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 112 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 24 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 88 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+339 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1405.496 ; gain = 486.438 ; free physical = 12175 ; free virtual = 21554
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.52 . Memory (MB): peak = 1437.516 ; gain = 0.000 ; free physical = 12167 ; free virtual = 21553
+INFO: [Common 17-206] Exiting Vivado at Wed May 11 11:33:04 2016...

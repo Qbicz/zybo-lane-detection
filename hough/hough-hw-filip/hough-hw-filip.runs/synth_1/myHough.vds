@@ -1,0 +1,317 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed May 25 10:50:44 2016
+# Process ID: 7588
+# Current directory: /home/lsriw/psra/kubicz/hough-hw-filip/Hough_Filip.runs/synth_1
+# Command line: vivado -log myHough.vds -mode batch -messageDb vivado.pb -notrace -source myHough.tcl
+# Log file: /home/lsriw/psra/kubicz/hough-hw-filip/Hough_Filip.runs/synth_1/myHough.vds
+# Journal file: /home/lsriw/psra/kubicz/hough-hw-filip/Hough_Filip.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source myHough.tcl -notrace
+Command: synth_design -top myHough -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -146 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1027.785 ; gain = 189.062 ; free physical = 10914 ; free virtual = 21149
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'myHough' [/home/lsriw/psra/kubicz/hough-hw-filip/Hough_Filip.srcs/sources_1/new/myHough.v:23]
+INFO: [Synth 8-638] synthesizing module 'Mnozarka' [/home/lsriw/psra/kubicz/hough-hw-filip/Hough_Filip.runs/synth_1/.Xil/Vivado-7588-lsriw/realtime/Mnozarka_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'Mnozarka' (1#1) [/home/lsriw/psra/kubicz/hough-hw-filip/Hough_Filip.runs/synth_1/.Xil/Vivado-7588-lsriw/realtime/Mnozarka_stub.v:7]
+WARNING: [Synth 8-689] width (21) of port connection 'P' does not match port width (22) of module 'Mnozarka' [/home/lsriw/psra/kubicz/hough-hw-filip/Hough_Filip.srcs/sources_1/new/myHough.v:49]
+WARNING: [Synth 8-3848] Net theta in module/entity myHough does not have driver. [/home/lsriw/psra/kubicz/hough-hw-filip/Hough_Filip.srcs/sources_1/new/myHough.v:29]
+WARNING: [Synth 8-3848] Net rho1 in module/entity myHough does not have driver. [/home/lsriw/psra/kubicz/hough-hw-filip/Hough_Filip.srcs/sources_1/new/myHough.v:39]
+WARNING: [Synth 8-3848] Net cos1 in module/entity myHough does not have driver. [/home/lsriw/psra/kubicz/hough-hw-filip/Hough_Filip.srcs/sources_1/new/myHough.v:34]
+INFO: [Synth 8-256] done synthesizing module 'myHough' (2#1) [/home/lsriw/psra/kubicz/hough-hw-filip/Hough_Filip.srcs/sources_1/new/myHough.v:23]
+WARNING: [Synth 8-3331] design myHough has unconnected port theta[4]
+WARNING: [Synth 8-3331] design myHough has unconnected port theta[3]
+WARNING: [Synth 8-3331] design myHough has unconnected port theta[2]
+WARNING: [Synth 8-3331] design myHough has unconnected port theta[1]
+WARNING: [Synth 8-3331] design myHough has unconnected port theta[0]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[9]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[8]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[7]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[6]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[5]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[4]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[3]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[2]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[1]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1067.168 ; gain = 228.445 ; free physical = 10874 ; free virtual = 21109
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1067.168 ; gain = 228.445 ; free physical = 10887 ; free virtual = 21108
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/lsriw/psra/kubicz/hough-hw-filip/Hough_Filip.runs/synth_1/.Xil/Vivado-7588-lsriw/dcp/Mnozarka_in_context.xdc] for cell 'Pomnoz_xcos1'
+Finished Parsing XDC File [/home/lsriw/psra/kubicz/hough-hw-filip/Hough_Filip.runs/synth_1/.Xil/Vivado-7588-lsriw/dcp/Mnozarka_in_context.xdc] for cell 'Pomnoz_xcos1'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1306.512 ; gain = 0.000 ; free physical = 10734 ; free virtual = 20954
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7603 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1306.512 ; gain = 467.789 ; free physical = 10713 ; free virtual = 20948
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1306.512 ; gain = 467.789 ; free physical = 10713 ; free virtual = 20948
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1306.512 ; gain = 467.789 ; free physical = 10713 ; free virtual = 20948
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1306.512 ; gain = 467.789 ; free physical = 10707 ; free virtual = 20942
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module myHough 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1306.512 ; gain = 467.789 ; free physical = 10707 ; free virtual = 20942
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design myHough has unconnected port theta[4]
+WARNING: [Synth 8-3331] design myHough has unconnected port theta[3]
+WARNING: [Synth 8-3331] design myHough has unconnected port theta[2]
+WARNING: [Synth 8-3331] design myHough has unconnected port theta[1]
+WARNING: [Synth 8-3331] design myHough has unconnected port theta[0]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[9]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[8]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[7]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[6]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[5]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[4]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[3]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[2]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[1]
+WARNING: [Synth 8-3331] design myHough has unconnected port pixel_y[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1306.512 ; gain = 467.789 ; free physical = 10700 ; free virtual = 20935
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1306.512 ; gain = 467.789 ; free physical = 10700 ; free virtual = 20935
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1306.512 ; gain = 467.789 ; free physical = 10700 ; free virtual = 20935
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1306.512 ; gain = 467.789 ; free physical = 10700 ; free virtual = 20935
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1333.500 ; gain = 494.777 ; free physical = 10660 ; free virtual = 20895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1333.500 ; gain = 494.777 ; free physical = 10660 ; free virtual = 20895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1343.512 ; gain = 504.789 ; free physical = 10652 ; free virtual = 20887
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1343.512 ; gain = 504.789 ; free physical = 10652 ; free virtual = 20887
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1343.512 ; gain = 504.789 ; free physical = 10652 ; free virtual = 20887
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Pomnoz_xcos1 has unconnected pin A[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Pomnoz_xcos1 has unconnected pin A[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Pomnoz_xcos1 has unconnected pin A[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Pomnoz_xcos1 has unconnected pin A[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Pomnoz_xcos1 has unconnected pin A[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Pomnoz_xcos1 has unconnected pin A[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Pomnoz_xcos1 has unconnected pin A[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Pomnoz_xcos1 has unconnected pin A[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Pomnoz_xcos1 has unconnected pin A[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Pomnoz_xcos1 has unconnected pin A[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1343.512 ; gain = 504.789 ; free physical = 10653 ; free virtual = 20886
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1343.512 ; gain = 504.789 ; free physical = 10653 ; free virtual = 20886
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1343.512 ; gain = 504.789 ; free physical = 10653 ; free virtual = 20886
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1343.512 ; gain = 504.789 ; free physical = 10653 ; free virtual = 20886
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1343.512 ; gain = 504.789 ; free physical = 10653 ; free virtual = 20886
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1343.512 ; gain = 504.789 ; free physical = 10653 ; free virtual = 20886
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |Mnozarka      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |Mnozarka |     1|
+|2     |IBUF     |    13|
+|3     |OBUF     |    11|
+|4     |OBUFT    |     5|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    51|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1343.512 ; gain = 504.789 ; free physical = 10653 ; free virtual = 20886
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 10 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1343.512 ; gain = 139.383 ; free physical = 10652 ; free virtual = 20885
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1343.512 ; gain = 504.789 ; free physical = 10652 ; free virtual = 20885
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 34 Warnings, 10 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1343.516 ; gain = 433.457 ; free physical = 10651 ; free virtual = 20884
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1351.520 ; gain = 0.000 ; free physical = 10650 ; free virtual = 20884
+INFO: [Common 17-206] Exiting Vivado at Wed May 25 10:51:09 2016...

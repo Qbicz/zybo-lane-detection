@@ -8,16 +8,23 @@ Zacytować pracę magisterską, nie opisujemy chyba?
 
 \subsection{Rozpoznawanie linii - transformata Hougha}
 
-Hough
+Transformata Hougha służy do znajdywania na obrazie linii prostych. Jest to przekształcenie z przestrzenii kartezjańskiej $(x,y)$ w przestrzeń Hougha $(\rho, \theta)$ dane wzorem
+\begin{equation}
+\rho = x cos \theta + y sin \theta
+\end{equation}
 
-%\begin{figure}[!htb]
-%  \begin{center}
-%    \includegraphics[scale=0.85]{img/maglev.PNG}
-%    \caption{Stanowisko laboratoryjne magnetycznej lewitacji}
-%  \end{center}
-%  
-%  \label{rys:maglev}
-%\end{figure}
+\begin{figure}[!htb]
+  \begin{center}
+    \includegraphics[scale=1]{img/hough-line.jpg}
+    \caption{Transformata Hougha w przestrzeni kartezjańskiej}
+  \end{center}
+  
+  \label{rys:maglev}
+\end{figure}
+
+Transformata pozwala wykryć linie proste korzystając z faktu, że punkt w przestrzeni $(x,y)$ odpowiada sinusoidzie w przestrzeni Hougha. Z kolei proste są transformowane w punkt. Z tego powodu stosując transformatę Hougha dla linii prostych w przestrzeni $(\rho, \theta)$ zaobserwujemy rodzinę sinusoid, które przecinają się we wspólnym punkcie. To przecięcie stanowi maksimum w obrazie wynikowym.
+
+
 
 %\begin{equation} \label{maglev_rown}
 %  \begin{cases}

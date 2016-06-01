@@ -1,0 +1,5 @@
+#!/bin/sh
+# Example Hough run
+
+./hough ./img/test1.ppm 3 1
+

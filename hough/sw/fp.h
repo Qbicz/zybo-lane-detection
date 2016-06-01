@@ -2,6 +2,7 @@
 #define FP_H_
 
 #include <stdint.h>
+#include <iostream>
 
 class fp {
     int32_t     d;
@@ -28,6 +29,8 @@ public:
         d >>= b;
         return *this;
     }
+
+    friend std::ostream& operator<<(std::ostream& os, fp& obj);
 
     operator double() { // fp -> double
         double v = d;
@@ -78,5 +81,13 @@ public:
         return n;
     }
 };
+
+std::ostream& operator<<(std::ostream& os, fp& obj)
+{
+    double num = double(obj);
+    os << "Fixed point:\n*  d = " << obj.d << "\n*  Precision = " << obj.f << std::endl;
+    os << "*  Actual number = " << num << std::endl;
+    return os;
+}
 
 #endif /* FP_H_ */

@@ -6,6 +6,23 @@
 
 \texttt{hough()}
 
+Do budowy modelu funkcjonalnego użyte zostały funkcje biblioteki OpenCV:
+void Canny(InputArray image, OutputArray edges, double threshold1, double threshold2, int apertureSize=3)
+gdzie,
+image – obraz wejściowy
+edges – wyjściowy obraz do detekcji krawędzi,
+threshold1 – pierwszy próg binaryzacji,
+threshold2 – drugi próg binaryzacji
+apertureSize – rozmiar maski użytej w funkji Sobel().
+
+\texttt{void HoughLines(InputArray image, OutputArray lines, double rho, double theta, int threshold, double srn=0, double stn=0 )}
+\texttt{image} – binarny obraz wejściowy,
+\texttt{lines} – wyjściowy wektor linii; każda reprezentowana jest przez dwa elementy – ro i theta
+\texttt{rho} – krok dla odległości ρ w pikselach
+\texttt{theta} – krok dla kąta φ w radianach
+\texttt{threshold} – próg głosów, które musi osiągnąć linia aby została zwrócona.
+
+
 screeny z programu
 
 % 3 obrazki obok siebie

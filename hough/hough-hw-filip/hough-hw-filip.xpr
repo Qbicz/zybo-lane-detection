@@ -10,7 +10,6 @@
     <Option Name="Part" Val="xc7z010clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="BoardPart" Val=""/>
-    <Option Name="SourceMgmtMode" Val="DisplayOnly"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="EnableCoreContainer" Val="TRUE"/>
@@ -19,16 +18,6 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/new/myHough.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../hough-hw-filip/Hough_Filip.srcs/sources_1/new/myHough.v"/>
-          <Attr Name="ImportTime" Val="1464254255"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/ip/Mnozarka/Mnozarka.upgrade_log"/>
       <File Path="$PSRCDIR/sources_1/ip/dist_mem_gen_0.xcix">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -51,6 +40,30 @@
         <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_0_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="doc/dist_mem_gen_v8_0_changelog.txt"/>
         <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="sim/dist_mem_gen_0.v"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_0.mif"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="e:/Teczka/8 semestr/PSRA/zybo-lane-detection/hough/hough-hw-filip/my/cosLUT.coe"/>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/myHough.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../hough-hw-filip/Hough_Filip.srcs/sources_1/new/myHough.v"/>
+          <Attr Name="ImportTime" Val="1464254255"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/Mnozarka/Mnozarka.upgrade_log"/>
+      <File Path="$PPRDIR/my/cosLUT.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/my/sinLUT.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
@@ -85,8 +98,9 @@
       <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="tb"/>
+        <Option Name="TopModule" Val="myHough"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>
@@ -105,6 +119,11 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="dds_compiler_10bit_funcsim.vhdl"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="dds_compiler_10bit_funcsim.v"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="dds_compiler_10bit_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="dds_compiler_10bit_stub.v"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="dds_compiler_10bit.dcp"/>
         <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="cmodel/dds_compiler_v6_0_bitacc_cmodel_nt64.zip"/>
         <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="demo_tb/tb_dds_compiler_10bit.vhd"/>
         <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="dds_compiler_10bit_ooc.xdc"/>
@@ -169,6 +188,37 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="dist_mem_gen_sin" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dist_mem_gen_sin">
+      <File Path="$PSRCDIR/sources_1/ip/dist_mem_gen_sin.xcix">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/dist_mem_gen_sin/dist_mem_gen_sin.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_sin.xci" FileRelPathName="dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_sin.xci" FileRelPathName="dist_mem_gen_sin_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_sin.xci" FileRelPathName="dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_sin.xci" FileRelPathName="dist_mem_gen_sin.mif"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_sin.xci" FileRelPathName="sim/dist_mem_gen_sin.v"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_sin.xci" FileRelPathName="synth/dist_mem_gen_sin.vhd"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_sin.xci" FileRelPathName="dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_sin.xci" FileRelPathName="doc/dist_mem_gen_v8_0_changelog.txt"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_sin.xci" FileRelPathName="dist_mem_gen_sin.veo"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_sin.xci" FileRelPathName="e:/Teczka/8 semestr/PSRA/zybo-lane-detection/hough/hough-hw-filip/my/sinLUT.coe"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_sin.xci" FileRelPathName="dist_mem_gen_sin.xml"/>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="dist_mem_gen_sin"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -220,6 +270,15 @@
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
+    <Run Id="dist_mem_gen_sin_synth_1" Type="Ft3:Synth" SrcSet="dist_mem_gen_sin" Part="xc7z010clg400-1" ConstrsSet="dist_mem_gen_sin" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/dist_mem_gen_sin_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" SynthRun="synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
@@ -251,6 +310,22 @@
       </Strategy>
     </Run>
     <Run Id="Mnozarka_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="Mnozarka" Description="Vivado Implementation Defaults" SynthRun="Mnozarka_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+          <Desc>Vivado Implementation Defaults</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+    <Run Id="dist_mem_gen_sin_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="dist_mem_gen_sin" Description="Vivado Implementation Defaults" SynthRun="dist_mem_gen_sin_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
           <Desc>Vivado Implementation Defaults</Desc>

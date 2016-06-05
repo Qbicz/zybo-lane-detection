@@ -23,14 +23,14 @@
 module myHough(
     input [10:0] pixel_x, // up to 2000px
     input [9:0] pixel_y,  // up to 1000px
-    input pixel_value,    // 0 or 1, black or white, no edge or edge
+    input pixel_value,    // 0 or 1; black or white; no edge or edge
     input clk,
     input ce,
     output [4:0] theta,   // up to 180, if step is greater than 1 degree theta can has less bits (30 values needed - 5 bits)
     output [10:0] rho     // up to ???
     );
 
-    reg [4:0] theta1 = 5b'00000;
+    reg [4:0] theta1 = 5'b00000;
     wire [9:0] cos1; // 0c10u
     wire [9:0] sin1;
     
@@ -42,20 +42,21 @@ module myHough(
     
     dist_mem_gen_0 cosDistLUT (
        // Input Ports - Single Bit
-       .clk      (clk),   
-       .we       (ce),    
        // Input Ports - Busses
-       .a[4:0]   (theta1[4:0]),
+       .a (theta1), // .a[4:0]   (theta1[4:0]),
        // Output Ports - Single Bit
        // Output Ports - Busses
-       .spo[4:0] (cos1[9:0])
-       // InOut Ports - Single Bit
-       // InOut Ports - Busses
+       .spo (cos1)
     );
     
     assign xcos1 = pixel_x * cos1;
     
-
+    dist_mem_gen_sin sinDistLUT (
+           .a (theta1), // .a[4:0]   (theta1[4:0]),
+           .spo (sin1)
+        );
+        
+    assign ysin1 = pixel_y * sin1;
     
 
 /*

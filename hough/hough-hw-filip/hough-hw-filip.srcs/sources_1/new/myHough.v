@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+// version for single theta
 module myHough(
     input [10:0] pixel_x, // up to 2000px
     input [9:0] pixel_y,  // up to 1000px
@@ -30,7 +30,7 @@ module myHough(
     output [10:0] rho     // up to ???
     );
 
-    reg [4:0] theta1;
+    reg [4:0] theta1 = 5b'00000;
     wire [9:0] cos1; // 0c10u
     wire [9:0] sin1;
     
@@ -38,9 +38,29 @@ module myHough(
     wire [19:0] ysin1;
     wire [10:0] rho1; // wystarczy integer
     
-    //----------- INSTANTIATION Mnozarka ----------
-	// Latencja = 2 (optimum pipeline stages)
+    // cos LUT
+    
+    dist_mem_gen_0 cosDistLUT (
+       // Input Ports - Single Bit
+       .clk      (clk),   
+       .we       (ce),    
+       // Input Ports - Busses
+       .a[4:0]   (theta1[4:0]),
+       // Output Ports - Single Bit
+       // Output Ports - Busses
+       .spo[4:0] (cos1[9:0])
+       // InOut Ports - Single Bit
+       // InOut Ports - Busses
+    );
+    
+    assign xcos1 = pixel_x * cos1;
+    
 
+    
+
+/*
+//----------- INSTANTIATION Mnozarka ---------
+// Latencja = 2 (optimum pipeline stages)
 	Mnozarka Pomnoz_xcos1 (
 	  .CLK(clk), // input clk
 	  .A(cos1), // input
@@ -48,7 +68,10 @@ module myHough(
 	  .CE(ce), // input ce
 	  .P(xcos1) // output [24 : 0] p
 	);
+*/
 	// ------- End INSTANTIATION Template ---------
+    
+    // sinus
     
     // Mnozarka Pomnoz_ysin1
     

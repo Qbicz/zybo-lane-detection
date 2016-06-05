@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:22:08 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Sun Jun 05 16:03:16 2016
+# Process ID: 9876
+# Log file: E:/Teczka/8 semestr/PSRA/zybo-lane-detection/hough/hough-hw-filip/hough-hw-filip.runs/dds_compiler_10bit_synth_1/dds_compiler_10bit.vds
+# Journal file: E:/Teczka/8 semestr/PSRA/zybo-lane-detection/hough/hough-hw-filip/hough-hw-filip.runs/dds_compiler_10bit_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dds_compiler_10bit.tcl -notrace
+Command: synth_design -top dds_compiler_10bit -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-83] Releasing license: Synthesis
+2 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Unable to run synthesis. No HDL sources found in project
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 05 16:03:23 2016...

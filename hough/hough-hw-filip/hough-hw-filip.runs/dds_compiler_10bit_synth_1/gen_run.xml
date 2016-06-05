@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="dds_compiler_10bit_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1465135386">
+  <File Type="RDS-DCP" Name="dds_compiler_10bit.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/dds_compiler_10bit_synth_1/constrs_in.xml"/>
+  <File Type="RDS-UTIL-PB" Name="dds_compiler_10bit_utilization_synth.pb"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/dds_compiler_10bit_synth_1/sources.xml"/>
+  <File Type="RDS-PROPCONSTRS" Name="dds_compiler_10bit_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="dds_compiler_10bit.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/dds_compiler_10bit_synth_1/dds_compiler_10bit_synth_1.psg"/>
+  <File Type="RDS-RDS" Name="dds_compiler_10bit.vds"/>
+  <File Type="RDS-UTIL" Name="dds_compiler_10bit_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="dds_compiler_10bit_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="dds_compiler_10bit_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dds_compiler_10bit">
+    <File Path="$PSRCDIR/sources_1/ip/dds_compiler_10bit.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/dds_compiler_10bit/dds_compiler_10bit.xci">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="dds_compiler_10bit"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dds_compiler_10bit">
+    <File Path="$PSRCDIR/sources_1/ip/dds_compiler_10bit.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/dds_compiler_10bit/dds_compiler_10bit.xci">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="dds_compiler_10bit"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

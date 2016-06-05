@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="5" Path="E:/Teczka/8 semestr/PSRA/temp/hough-hw-filip/hough-hw-filip.xpr">
+<Project Version="7" Minor="5" Path="E:/Teczka/8 semestr/PSRA/zybo-lane-detection/hough/hough-hw-filip/hough-hw-filip.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="c533b5acd915449bbfbc6e149d7d1439"/>
@@ -27,6 +27,30 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/Mnozarka/Mnozarka.upgrade_log"/>
+      <File Path="$PSRCDIR/sources_1/ip/dist_mem_gen_0.xcix">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_0.veo"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_0.xml"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="synth/dist_mem_gen_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_0_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="doc/dist_mem_gen_v8_0_changelog.txt"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="sim/dist_mem_gen_0.v"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
@@ -57,21 +81,6 @@
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>
-    <FileSet Name="Mnozarka" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Mnozarka">
-      <File Path="$PSRCDIR/sources_1/ip/Mnozarka/Mnozarka.xci">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../hough-hw-filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/Mnozarka.xci"/>
-          <Attr Name="ImportTime" Val="1464254255"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="Mnozarka"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="sim_2" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_2">
       <Filter Type="Srcs"/>
       <Config>
@@ -79,6 +88,85 @@
         <Option Name="TopModule" Val="tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="dds_compiler_10bit" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dds_compiler_10bit">
+      <File Path="$PSRCDIR/sources_1/ip/dds_compiler_10bit.xcix">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/dds_compiler_10bit/dds_compiler_10bit.xci">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="cmodel/dds_compiler_v6_0_bitacc_cmodel_nt64.zip"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="demo_tb/tb_dds_compiler_10bit.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="dds_compiler_10bit_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="dds_compiler_v6_0/hdl/dds_compiler_v6_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="xbip_dsp48_multadd_v3_0/hdl/xbip_dsp48_multadd_v3_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="xbip_dsp48_multadd_v3_0/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="xbip_dsp48_addsub_v3_0/hdl/xbip_dsp48_addsub_v3_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="synth/dds_compiler_10bit.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="sim/dds_compiler_10bit.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="mult_gen_v12_0/hdl/mult_gen_v12_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="xbip_dsp48_addsub_v3_0/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="xbip_bram18k_v3_0/hdl/xbip_bram18k_v3_0_vh_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="xbip_bram18k_v3_0/hdl/xbip_bram18k_v3_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="cmodel/dds_compiler_v6_0_bitacc_cmodel_lin64.zip"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="doc/dds_compiler_v6_0_changelog.txt"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="axi_utils_v2_0/hdl/axi_utils_v2_0_vh_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="xbip_pipe_v3_0/hdl/xbip_pipe_v3_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="dds_compiler_10bit.xml"/>
+        <CompFileExtendedInfo CompFileName="dds_compiler_10bit.xci" FileRelPathName="dds_compiler_10bit.veo"/>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="dds_compiler_10bit"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="Mnozarka" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Mnozarka">
+      <File Path="$PSRCDIR/sources_1/ip/Mnozarka/Mnozarka.xci">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../hough-hw-filip/Hough_Filip.srcs/sources_1/ip/Mnozarka/Mnozarka.xci"/>
+          <Attr Name="ImportTime" Val="1464254255"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="Mnozarka.xml"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="Mnozarka.veo"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="Mnozarka_funcsim.vhdl"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="Mnozarka_funcsim.v"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="Mnozarka_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="Mnozarka_stub.v"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="Mnozarka.dcp"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="sim/Mnozarka.vhd"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="mult_gen_v12_0/hdl/mult_gen_v12_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="doc/mult_gen_v12_0_changelog.txt"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="xbip_bram18k_v3_0/hdl/xbip_bram18k_v3_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="xbip_bram18k_v3_0/hdl/xbip_bram18k_v3_0_vh_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="xbip_pipe_v3_0/hdl/xbip_pipe_v3_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="Mnozarka_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="Mnozarka.xci" FileRelPathName="synth/Mnozarka.vhd"/>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="Mnozarka"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
   </FileSets>
@@ -114,9 +202,20 @@
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
+    <Run Id="dds_compiler_10bit_synth_1" Type="Ft3:Synth" SrcSet="dds_compiler_10bit" Part="xc7z010clg400-1" ConstrsSet="dds_compiler_10bit" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/dds_compiler_10bit_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
     <Run Id="Mnozarka_synth_1" Type="Ft3:Synth" SrcSet="Mnozarka" Part="xc7z010clg400-1" ConstrsSet="Mnozarka" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/Mnozarka_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -135,9 +234,27 @@
         <Step Id="write_bitstream"/>
       </Strategy>
     </Run>
+    <Run Id="dds_compiler_10bit_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="dds_compiler_10bit" Description="Vivado Implementation Defaults" SynthRun="dds_compiler_10bit_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+          <Desc>Vivado Implementation Defaults</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
     <Run Id="Mnozarka_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="Mnozarka" Description="Vivado Implementation Defaults" SynthRun="Mnozarka_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+          <Desc>Vivado Implementation Defaults</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

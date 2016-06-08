@@ -8,6 +8,7 @@
 
 #include "fp.h"
 
+// Hough transform for floating point
 cv::Mat hough(const cv::Mat & src,
               double dphi,   // phi increment
               double drho) { // rho increment
@@ -64,10 +65,11 @@ cv::Mat hough(const cv::Mat & src,
     return him;
 }
 
+
 // Hough Transform for fixed point fp
-cv::Mat hough(const cv::Mat & src,
-              double dphi,   // phi increment
-              double drho) { // rho increment
+cv::Mat hough_fp(const cv::Mat & src,
+              fp& dphi,   // phi increment
+              fp& drho) { // rho increment
     std::vector<fp> cosphis; // TODO: vector of type fp
     std::vector<fp> sinphis;
     cosphis.resize(180/dphi);
@@ -102,7 +104,11 @@ cv::Mat hough(const cv::Mat & src,
             uchar pix = src.at<uchar>(y,x);
             if(pix) {
                 for(int i = 0; i < phic; ++i) {
-                    double rho = cosphis[i]*x + sinphis[i]*y;
+                    fp x_f(0);
+                    fp y_f(0);
+                    x_f = (double)x;
+                    y_f = (double)y;
+                    fp rho = cosphis[i]*x_f + sinphis[i]*y_f; // 16 prec
                     int j = (int)((rho + r)/drho); // rho is in (-r, r)
                     hough_plane[i][j] += 1;
                 }
@@ -125,6 +131,7 @@ cv::Mat hough(const cv::Mat & src,
 }
 
 
+
 int main(int argc, char** argv) {
     if(argc < 2) {
         std::cout << "#no filename given" << std::endl;
@@ -142,8 +149,8 @@ int main(int argc, char** argv) {
         std::cout << "#no hough plane gradation given" << std::endl;
         return -1;
     }
-    double dphi;
-    double drho;
+    fp dphi(11);
+    fp drho(11);
     try {
         dphi = std::stod(argv[2]);
         drho = std::stod(argv[3]);
@@ -154,9 +161,10 @@ int main(int argc, char** argv) {
 
     fp myFixed(6);
     myFixed = 5.1923;
-    std::cout << myFixed;
+    std::cout << (double)myFixed << std::endl;
 
-    cv::Mat out = hough(src, dphi, drho);
+    // Using fixed point Hough
+    cv::Mat out = hough_fp(src, dphi, drho);
     std::vector<int> compression_params;
     compression_params.push_back(CV_IMWRITE_PXM_BINARY);
     compression_params.push_back(0);

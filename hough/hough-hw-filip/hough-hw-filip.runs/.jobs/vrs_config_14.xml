@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="dist_mem_gen_sin_synth_1" LaunchDir="E:/Teczka/8 semestr/PSRA/zybo-lane-detection/hough/hough-hw-filip/hough-hw-filip.runs/dist_mem_gen_sin_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="E:/Teczka/8 semestr/PSRA/zybo-lane-detection/hough/hough-hw-filip/hough-hw-filip.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="dist_mem_gen_sin_synth_1"/>
+	</Run>
+</Runs>
+

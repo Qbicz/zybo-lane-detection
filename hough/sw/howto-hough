@@ -1,6 +1,8 @@
 # Compile with:
 g++ hough.cpp -Wall -Werror -std=c++11 `pkg-config --cflags --libs opencv` -o hough
 
+or with 'make hough'
+
 # Run with (example)
-./hough ./img/test1/ppm 3 1
+./hough ./img/test1.ppm 3 1
 
